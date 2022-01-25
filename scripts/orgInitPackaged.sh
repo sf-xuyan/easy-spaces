@@ -1,4 +1,7 @@
 #!/bin/bash
+# get started -> bash scripts/orgInitPackaged.sh easyspaces
+# required -> replace packageVersionId with the newest one
+# desc -> create scratch org, install the packaged source, assign permission and import data, finally navigate to home page
 
 ALIAS=easyspaces
 
@@ -15,7 +18,7 @@ sfdx force:package:install --package 04t1I0000036tXlQAI
 sleep 60
 sfdx force:package:install --package 04t1I0000036tXqQAI
 sleep 60
-sfdx force:package:install --package 04t1I0000036tXvQAI
+sfdx force:package:install --package 04t1I0000036tYUQAY
 sleep 60
 echo "Packages installed. Setting up data and permissions."
 sfdx force:user:permset:assign -n EasySpacesObjects

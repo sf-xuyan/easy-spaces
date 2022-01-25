@@ -1,4 +1,6 @@
 #!/bin/bash
+# get started -> bash scripts/orgInit.sh 7
+# desc -> create and push source to scratch org, assign permission and import data, finally navigate to home page
 
 DURATION=7
 

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# get started -> bash scripts/packagingDeployment.sh local uat
+# required -> replace packageVersionId with the newest one for 4 PACKAGE_VERSION related variables
+# desc -> install packages in target org
+
 # Script for packaging branch creation
 
 # Instructions:
@@ -20,6 +24,7 @@ PACKAGE_VERSION_BASE_CODE="ESBaseCode@0.1.0-2"
 PACKAGE_VERSION_BASE_STYLES="ESBaseStyles@0.1.0-3"
 PACKAGE_VERSION_SPACE_MGMT="ESSpaceMgmt@0.1.0-3"
 
+# "$#" -> the num of parameters
 if [ "$#" -eq 0 ]; then
   echo "No parameter provided, this will be full package installation"
 fi
